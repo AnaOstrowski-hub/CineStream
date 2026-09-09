@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CineStream - Filmes e Séries</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cine</h1>
+
+    <!-- Menu Superior (Navbar) -->
+    <header class="navbar">
+        <div class="logo">CineStream</div>
+        <nav class="menu">
+            <a href="#" class="active">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha Lista</a>
+        </nav>
+        <div class="busca">
+            <input type="text" placeholder="Buscar filme...">
+        </div>
+    </header>
+
+    <!-- Banner Principal de Destaque -->
+    <section class="banner-principal">
+        <div class="banner-conteudo">
+            <h1>Interestelar</h1>
+            <p>Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.</p>
+            <button class="btn-assistir" onclick="assistirFilme('Interestelar')">Assistir Agora</button>
+        </div>
+    </section>
+
+    <!-- Catálogo de Filmes -->
+    <main class="catalogo">
+        <h2>Filmes Populares</h2>
+        <div class="grade-filmes">
+            
+            <!-- Card Filme 1 -->
+            <div class="filme-card" onclick="assistirFilme('Batman: O Cavaleiro das Trevas')">
+                <img src="https://unsplash.com" alt="Batman">
+                <div class="filme-info">
+                    <h3>The Dark Knight</h3>
+                    <span>Ação | 9.0</span>
+                </div>
+            </div>
+
+            <!-- Card Filme 2 -->
+            <div class="filme-card" onclick="assistirFilme('A Origem')">
+                <img src="https://unsplash.com" alt="Inception">
+                <div class="filme-info">
+                    <h3>Inception</h3>
+                    <span>Ficção | 8.8</span>
+                </div>
+            </div>
+
+            <!-- Card Filme 3 -->
+            <div class="filme-card" onclick="assistirFilme('Matrix')">
+                <img src="https://unsplash.com" alt="Matrix">
+                <div class="filme-info">
+                    <h3>The Matrix</h3>
+                    <span>Sci-Fi | 8.7</span>
+                </div>
+            </div>
+
+            <!-- Card Filme 4 -->
+            <div class="filme-card" onclick="assistirFilme('Gladiador')">
+                <img src="https://unsplash.com" alt="Gladiador">
+                <div class="filme-info">
+                    <h3>Gladiator</h3>
+                    <span>Épico | 8.5</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
