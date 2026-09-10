@@ -62,16 +62,8 @@ body {
     display: flex;
     align-items: center;
     padding: 0 4%;
-  display: flex;          /* Coloca os itens lado a lado */
-  align-items: center;    /* Centraliza o texto e a imagem verticalmente */
-  gap: 15px;              /* Adiciona espaço entre a imagem e o texto */
+    
 }
-
-.container img {
-  width: 150px;           /* Define a largura da imagem */
-  height: auto;           /* Mantém a proporção */
-}
-
 
 .banner-conteudo {
     max-width: 600px;
