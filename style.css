@@ -65,13 +65,14 @@ body {
     padding: 0 4%;
     
 }
+
 .meu-fundo-especifico {
   /* Define o tamanho da caixa */
   width: 100%;
   height: 400px; 
   
   /* Insere a imagem de fundo */
-  background-image: url('caminho-da-sua-imagem.jpg'); 
+  background-image: url('https://i.pinimg.com/736x/18/7a/22/187a22c9396ae6d7a6510eb5398c69b0.jpg'); 
   
   /* Impede que a imagem se repita */
   background-repeat: no-repeat; 
@@ -81,6 +82,7 @@ body {
   
   /* Faz a imagem cobrir todo o espaço do elemento */
   background-size: cover; 
+}
 
 .banner-conteudo {
     max-width: 600px;
