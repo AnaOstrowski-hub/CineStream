@@ -58,7 +58,7 @@ body {
 .banner-principal {
     
     background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), 
-                url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoqsed66NTXNbvA0hSv6jYtyNrP_3ysaw4iOvxnt8lQ&s=10') no-repeat center center/cover;
+                url('https://unsplash.com') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     align-items: center;
