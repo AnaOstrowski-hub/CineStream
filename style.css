@@ -26,7 +26,7 @@ body {
 }
 
 .logo {
-    color: #E50914;
+    color: #e509d3;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -54,31 +54,18 @@ body {
     outline: none;
 }
 
-
-
-.meu-fundo-especifico {
-      background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), 
+/* Banner Principal */
+.banner-principal {
+    
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), 
                 url('https://unsplash.com') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     align-items: center;
     padding: 0 4%;
-  /* Define o tamanho da caixa */
-  width: 100%;
-  height: 400px; 
-  
-  /* Insere a imagem de fundo */
-  background-image: url('https://i.pinimg.com/736x/18/7a/22/187a22c9396ae6d7a6510eb5398c69b0.jpg'); 
-  
-  /* Impede que a imagem se repita */
-  background-repeat: no-repeat; 
-  
-  /* Centraliza a imagem na caixa */
-  background-position: center; 
-  
-  /* Faz a imagem cobrir todo o espaço do elemento */
-  background-size: cover; 
+    
 }
+
 
 .banner-conteudo {
     max-width: 600px;
@@ -97,7 +84,7 @@ body {
 }
 
 .btn-assistir {
-    background-color: #E50914;
+    background-color: #e509d3;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -109,7 +96,7 @@ body {
 }
 
 .btn-assistir:hover {
-    background-color: #b81d24;
+    background-color: #e509d3;
 }
 
 /* Catálogo de Filmes */
