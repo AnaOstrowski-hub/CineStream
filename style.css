@@ -56,9 +56,12 @@ body {
 
 
 .banner-principal {
-    
+     background-image: url('https://img.odcdn.com.br/wp-content/uploads/2025/01/Interestelar-filme-curiosidades-1920x1080.png'); /* Insere a imagem */
+  background-size: cover;          /* Faz a imagem cobrir todo o espaço */
+  background-position: center;     /* Centraliza a imagem no bloco */
+  background-repeat: no-repeat; 
     background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), 
-                url('https://unsplash.comhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2hPo8wGPj97K2umbO2TpTxgBYKrxAWfVGyrkFUzPSoTlUnGS1LNGOoU&s=10') no-repeat center center/cover;
+                url('https://unsplash.com') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     align-items: center;
