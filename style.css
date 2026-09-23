@@ -188,3 +188,21 @@ body {
   background-color: #b807a6; /* Ajustado levemente a cor do hover que estava idêntica */
   animation-play-state: paused;
 }
+/* 1. Criando a animação de balançar (shake) */
+@keyframes balancar {
+  0% { transform: rotate(0deg) scale(1.05); }
+  20% { transform: rotate(-3deg) scale(1.05); }
+  40% { transform: rotate(3deg) scale(1.05); }
+  60% { transform: rotate(-3deg) scale(1.05); }
+  80% { transform: rotate(3deg) scale(1.05); }
+  100% { transform: rotate(0deg) scale(1.05); }
+}
+
+/* 2. Modificando o comportamento do hover do seu card existente */
+.filme-card:hover {
+  /* Substitui o 'scale(1.05)' antigo pela nossa nova animação */
+  animation: balancar 0.5s ease-in-out;
+  
+  /* Garante que o card fique levemente maior após terminar de balançar */
+  transform: scale(1.05); 
+}
