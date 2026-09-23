@@ -54,18 +54,15 @@ body {
     outline: none;
 }
 
-
 .banner-principal {
-    
-    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), 
-                url('https://unsplash.com') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    padding: 0 4%;
-    
+  /* Substituído o link genérico pela imagem do Interestelar e ajustado o degradê */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.4) 60%, transparent), 
+              url('https://i.pinimg.com/736x/2b/f9/2c/2bf92c5dc6b94e414edb6ea5113f2458.jpg') no-repeat center center/cover;
+  height: 75vh; /* Aumentado levemente para destacar melhor o astronauta */
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
 }
-
 
 .banner-conteudo {
     max-width: 600px;
