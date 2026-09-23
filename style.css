@@ -150,3 +150,41 @@ body {
     font-size: 12px;
     color: #aaa;
 }
+
+/* 1. Criando a animação de pulsação */
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(229, 9, 211, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(229, 9, 211, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(229, 9, 211, 0);
+  }
+}
+
+/* 2. Aplicando a animação no seu botão existente */
+.btn-assistir {
+  background-color: #e509d3;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  /* Linha adicionada: roda a animação 'pulsar' a cada 2 segundos infinitamente */
+  animation: pulsar 2s infinite ease-in-out; 
+}
+
+/* Opcional: pausa a animação quando o usuário passa o mouse por cima */
+.btn-assistir:hover {
+  background-color: #b807a6; /* Ajustado levemente a cor do hover que estava idêntica */
+  animation-play-state: paused;
+}
