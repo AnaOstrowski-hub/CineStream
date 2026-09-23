@@ -57,7 +57,7 @@ body {
 .banner-principal {
   /* Substituído o link genérico pela imagem do Interestelar e ajustado o degradê */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.4) 60%, transparent), 
-              url('https://i.pinimg.com/736x/02/03/0a/02030a4f4a389695ace31673a2900405.jpg') no-repeat center center/cover;
+              url('https://i.pinimg.com/736x/6b/6a/47/6b6a47659f5f088de646fa5c534e5e4c.jpg') no-repeat center center/cover;
   height: 75vh; /* Aumentado levemente para destacar melhor o astronauta */
   display: flex;
   align-items: center;
