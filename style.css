@@ -253,3 +253,24 @@ body {
     cursor: pointer;
 }
 
+
+/* Cards adicionados pelo formulário */
+
+#filmes .filme-card {
+    min-width: 0;
+}
+
+#filmes .filme-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+#filmes .filme-card .filme-info {
+    padding: 12px;
+}
+
+#filmes .filme-card:hover {
+    cursor: pointer;
+}

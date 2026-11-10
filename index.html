@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,19 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button id="abrir-formulario" class="btn-adicionar">
-    + Adicionar filme
-</button>
-<script src="script.js"></script>
-<form id="form-filme" class="form-filme" hidden>
-    <input type="text" name="titulo"
-           placeholder="Nome do filme" required>
-
-    <input type="url" name="capa"
-           placeholder="URL da capa do filme" required>
-
-    <button type="submit">Salvar filme</button>
-</form>
 
     <header class="navbar">
         <div class="logo">CineStream</div>
@@ -29,44 +17,54 @@
             <a href="#">Filmes</a>
             <a href="#">Minha Lista</a>
         </nav>
-        
     </header>
 
+    <button id="abrir-formulario" class="btn-adicionar">
+        + Adicionar filme
+    </button>
+
+    <form id="form-filme" class="form-filme" hidden>
+        <input type="text" name="titulo"
+               placeholder="Nome do filme" required>
+
+        <input type="url" name="capa"
+               placeholder="URL da capa do filme" required>
+
+        <button type="submit">Salvar filme</button>
+    </form>
 
     <section class="banner-principal">
         <div class="banner-conteudo">
-            
             <h1>Interestelar</h1>
             <p>Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.</p>
-            <button class="btn-assistir" onclick="assistirFilme('Interestelar')">Assistir Agora</button>
+            <button class="btn-assistir" onclick="assistirFilme('Interestelar')">
+                Assistir Agora
+            </button>
         </div>
     </section>
 
-    
     <main class="catalogo">
         <h2>Catálogo</h2>
-        <div class="grade-filmes">
-            
-           
-            <div class="filme-card" onclick="assistirFilme('Batman: O Cavaleiro das Trevas')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI1ltYYP1oZ3gKAd87mjrH1sPrJ95ktAR1GJgMrTTrg&s=10" alt="Batman">
+
+        <div class="grade-filmes" id="filmes">
+
+            <div class="filme-card" onclick="assistirFilme('Ela e tudo. Ele é só o Ken')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI1ltYYP1oZ3gKAd87mjrH1sPrJ95ktAR1GJgMrTTrg&s=10" alt="Filme">
                 <div class="filme-info">
-                    <h3>Ela e tudo. Ele é o só o Ken</h3>
+                    <h3>Ela e tudo. Ele é só o Ken</h3>
                     <span>Comédia | ★ 8.0</span>
                 </div>
             </div>
 
-            
-            <div class="filme-card" onclick="assistirFilme('A Origem')">
-                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAFsjkjA5yco0NOywmvdZHUN8ksxr8cjDX_VhOcjUxtw&s=10" alt="Divertidamente">
+            <div class="filme-card" onclick="assistirFilme('Divertidamente')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAFsjkjA5yco0NOywmvdZHUN8ksxr8cjDX_VhOcjUxtw&s=10" alt="Divertidamente">
                 <div class="filme-info">
                     <h3>Divertidamente</h3>
                     <span>Animação | ★ 9.8</span>
                 </div>
             </div>
 
-          
-            <div class="filme-card" onclick="assistirFilme('Matrix')">
+            <div class="filme-card" onclick="assistirFilme('The Dark Knight')">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXi6ty_uO-gRQ2C6WXXqggF9-yA-eqTZP1NsZohj0ELA&s=10" alt="Batman">
                 <div class="filme-info">
                     <h3>The Dark Knight</h3>
@@ -74,9 +72,8 @@
                 </div>
             </div>
 
-            
-            <div class="filme-card" onclick="assistirFilme('Gladiador')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZwKpl6CTjz2bdk3syV5OecV7Cqi0HOstPC4lzzNizQ&s=10" alt="demon slayer">
+            <div class="filme-card" onclick="assistirFilme('Demon Slayer')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZwKpl6CTjz2bdk3syV5OecV7Cqi0HOstPC4lzzNizQ&s=10" alt="Demon Slayer">
                 <div class="filme-info">
                     <h3>Demon Slayer</h3>
                     <span>Épico | ★ 9.9</span>
@@ -86,6 +83,6 @@
         </div>
     </main>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
