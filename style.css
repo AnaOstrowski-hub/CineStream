@@ -202,3 +202,61 @@ body {
   /* Garante que o card fique levemente maior após terminar de balançar */
   transform: scale(1.05); 
 }
+
+.btn-adicionar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-adicionar:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+.form-filme {
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    width: 280px;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.form-filme[hidden] {
+    display: none;
+}
+
+.form-filme input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+}
+
+.form-filme button {
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
