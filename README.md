@@ -1,2 +1,0 @@
-# CineStream
-Site sobre Cine
