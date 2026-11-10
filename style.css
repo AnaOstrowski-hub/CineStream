@@ -44,14 +44,7 @@ body {
     font-weight: bold;
 }
 
-.busca input {
-    background-color: rgba(0, 0, 0, 0.986);
-    color: white;
-    border: 1px solid #808080;
-    padding: 7px 15px;
-    border-radius: 4px;
-    outline: none;
-}
+
 
 .banner-principal {
   /* Substituído o link genérico pela imagem do Interestelar e ajustado o degradê */
