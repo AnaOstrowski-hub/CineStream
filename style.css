@@ -1,132 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/* BOTÃO ADICIONAR */
-.btn-adicionar {
-    background-color: #e509d3;
-    color: white;
-    border: none;
-    padding: 11px 18px;
-    border-radius: 5px;
+body {
+    background-color: #141414;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background: linear-gradient(to bottom, rgba(0,0,0,10), transparent);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #e509d3;
+    font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
-.btn-adicionar:hover {
-    background-color: #b807a6;
-    transform: scale(1.05);
+.menu a:hover, .menu a.active {
+    color: #ffffff;
+    font-weight: bold;
 }
 
-/* FORMULÁRIO */
-.formulario-container {
-    display: none;
-    background-color: #202020;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    max-width: 500px;
-    border: 1px solid #e509d3;
-}
-
-.formulario-container h2 {
-    margin-bottom: 20px;
-    color: #e509d3;
-}
-
-.formulario-container input,
-.formulario-container select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    background-color: #141414;
-    border: 1px solid #555;
-    border-radius: 5px;
+.busca input {
+    background-color: rgba(0, 0, 0, 0.986);
     color: white;
+    border: 1px solid #808080;
+    padding: 7px 15px;
+    border-radius: 4px;
     outline: none;
-}
-
-.formulario-container input:focus,
-.formulario-container select:focus {
-    border-color: #e509d3;
-}
-
-.botoes-formulario {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.botoes-formulario button {
-    background-color: #e509d3;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.botoes-formulario button:hover {
-    background-color: #b807a6;
-}
-
-.botoes-formulario .btn-cancelar {
-    background-color: #555;
-}
-
-.botoes-formulario .btn-cancelar:hover {
-    background-color: #777;
-}
-
-/* BOTÃO EXCLUIR */
-.btn-excluir {
-    width: 100%;
-    padding: 10px;
-    background-color: #b00020;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.btn-excluir:hover {
-    background-color: #e50920;
-}
-
-/* TIPO DO CONTEÚDO */
-.tipo-conteudo {
-    color: #e509d3;
-    font-size: 12px;
-    display: block;
-    margin-top: 5px;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 700px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 15px;
-        position: relative;
-    }
-
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .menu a {
-        margin-right: 5px;
-    }
-
-    .banner-principal {
-        height: 65vh;
-    }
-
-    .banner-conteudo h1 {
-        font-size: 34px;
-    }
-
-    .btn-adicionar {
-        width: 100%;
-    }
 }
